@@ -1,0 +1,19 @@
+{
+  "name": "pgbench",
+  "version": "1.0.0",
+  "description": "https://www.postgresql.org/docs/current/libpq-pipeline-mode.html https://github.com/brianc/node-postgres/issues/3391 https://docs.google.com/spreadsheets/d/1XkHqIyUH_OARUbnoTR4jFT1rsHaT1tFdDkesygwQvxU/edit?gid=0#gid=0 https://bun.sh/docs/api/sql#prepared-statements",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pg": "^8.16.0",
+    "postgres": "^3.4.7"
+  }
+}
