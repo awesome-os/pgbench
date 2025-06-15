@@ -1,7 +1,7 @@
 import { Pool } from "pg";
 import { Stats } from './lib/bench.js'
 
-const pool_size = 4
+const pool_size = 3
 
 const sql = new Pool({
   host: 'tfb-database',

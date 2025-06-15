@@ -1,7 +1,7 @@
 import { Stats } from './lib/bench.js'
 import { SQL } from "bun";
 
-const pool_size = 4
+const pool_size = 3
 /*
 const config = {
 //  url: "postgres://benchmarkdbuser:benchmarkdbpass@localhost/hello_world",

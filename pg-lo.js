@@ -350,6 +350,7 @@ const db = {
   database: 'hello_world',
   version: 0x00030000,
 }
+const encoder = new TextEncoder()
 const unix_path = './postgresql/.s.PGSQL.5432'
 const hasher = new Digest('md5')
 const stats = new Stats()
@@ -358,9 +359,9 @@ const address = getenv('ADDRESS') || '127.0.0.1'
 const port = parseInt(getenv('PORT') || '5432', 10)
 const loop = new Loop()
 const timer = new Timer(loop, 1000, on_timer)
-const type = lo.args[2] || 'unix'
+const type = lo.args[2] || 'tcp'
 const nclient = parseInt(lo.args[3] || '3', 10)
-const batch_size = parseInt(lo.args[4] || '8', 10)
+const batch_size = parseInt(lo.args[4] || '1', 10)
 for (let i = 0; i < nclient; i++) start_client()
 while (loop.poll() > 0) {}
 timer.close()
